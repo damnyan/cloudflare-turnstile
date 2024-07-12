@@ -2,7 +2,6 @@
     "name": "dmn/cloudflare-turnstile",
     "description": "test",
     "type": "library",
-    "version": "1.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {

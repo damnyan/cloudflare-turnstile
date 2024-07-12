@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9b833ca6b3607b754bdb2a0c8be3089",
+    "content-hash": "6eaa89ca69694e688a8556451945e4a0",
     "packages": [
         {
             "name": "dmn/laravel-exception",
