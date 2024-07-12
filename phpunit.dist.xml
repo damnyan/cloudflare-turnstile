@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.2/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true">
+  <testsuites>
+    <testsuite name="Test Suite">
+      <directory suffix="Test.php">./tests</directory>
+    </testsuite>
+  </testsuites>
+  <source restrictNotices="true" restrictWarnings="true" ignoreIndirectDeprecations="true">
+    <include>
+      <directory suffix=".php">./src</directory>
+      <!-- <directory suffix=".php">config</directory> -->
+    </include>
+  </source>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+    <env name="APP_DEBUG" value="true"/>
+    <env name="CLOUDFLARE_TURNSTILE_SECRET" value="turnstilecode here"/>
+  </php>
+</phpunit>

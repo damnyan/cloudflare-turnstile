@@ -1,0 +1,43 @@
+{
+    "name": "dmn/cloudflare-turnstile",
+    "description": "test",
+    "type": "library",
+    "version": "1.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dmn\\CloudflareTurnstile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dmn\\CloudflareTurnstile\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dc",
+            "email": "damnyan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench": "^9.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dmn\\CloudflareTurnstile\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "require": {
+        "dmn/exception": "^3.0"
+    }
+}
