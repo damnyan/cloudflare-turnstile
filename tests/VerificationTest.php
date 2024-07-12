@@ -5,15 +5,15 @@ namespace Dmn\CloudflareTurnstile\Tests;
 use Dmn\CloudflareTurnstile\HumanMiddleware;
 use Dmn\CloudflareTurnstile\NotHumanException;
 use Dmn\CloudflareTurnstile\ServiceProvider;
-use Dmn\CloudflareTurnstile\Tests\Tools\Faker;
 use Dmn\CloudflareTurnstile\Turnstile;
+use Dmn\CloudflareTurnstile\TurnstileFaker;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Orchestra\Testbench\TestCase;
 
 class VerificationTest extends TestCase
 {
-    use Faker;
+    use TurnstileFaker;
 
     /**
      * @inheritDoc

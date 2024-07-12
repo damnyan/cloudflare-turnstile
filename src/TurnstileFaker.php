@@ -1,11 +1,11 @@
 <?php
 
-namespace Dmn\CloudflareTurnstile\Tests\Tools;
+namespace Dmn\CloudflareTurnstile;
 
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Http;
 
-trait Faker
+trait TurnstileFaker
 {
     /**
      * Cloudflare turnstile fake
@@ -20,7 +20,7 @@ trait Faker
         int $status = Response::HTTP_OK
     ): void {
         $file = __DIR__
-            . '/Responses/'
+            . '/../tests/Tools/Responses/'
             . (($success) ? 'success' : 'failed')
             . '.json';
         $baseUri = config(key: 'cloudflare.turnstile.base_url');
