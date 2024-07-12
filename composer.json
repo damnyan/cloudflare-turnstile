@@ -38,6 +38,6 @@
         }
     },
     "require": {
-        "dmn/exception": "^3.0"
+        "dmn/laravel-exception": "^1.0"
     }
 }

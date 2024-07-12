@@ -4,32 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b701100191d3790e395f73805dabc4d",
+    "content-hash": "b9b833ca6b3607b754bdb2a0c8be3089",
     "packages": [
         {
-            "name": "dmn/exception",
-            "version": "v3.0.1",
+            "name": "dmn/laravel-exception",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jmcnualan/lumen-exception.git",
-                "reference": "71a182a199b2ff345b540411295d3a775983de6b"
+                "url": "https://github.com/damnyan/laravel-exception.git",
+                "reference": "959112b2d9dcb08fbff64429d3a985bf8874a794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmcnualan/lumen-exception/zipball/71a182a199b2ff345b540411295d3a775983de6b",
-                "reference": "71a182a199b2ff345b540411295d3a775983de6b",
+                "url": "https://api.github.com/repos/damnyan/laravel-exception/zipball/959112b2d9dcb08fbff64429d3a985bf8874a794",
+                "reference": "959112b2d9dcb08fbff64429d3a985bf8874a794",
                 "shasum": ""
             },
             "require-dev": {
-                "laravel/lumen-framework": "^8.0",
-                "mockery/mockery": "^1.4",
-                "phpunit/phpunit": "^9.3"
+                "laravel/framework": "^10.9",
+                "orchestra/testbench": "^8.5"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dmn\\Exceptions\\ServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "Dmn\\Exceptions\\": "src/",
-                    "Dmn\\Exceptions\\Example\\": "tests/Example/"
+                    "Dmn\\Exceptions\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -38,15 +43,16 @@
             ],
             "authors": [
                 {
-                    "name": "dmn"
+                    "name": "dc",
+                    "email": "damnyan@gmail.com"
                 }
             ],
-            "description": "Exceptions for lumen",
+            "description": "Exceptions for Larave 10+",
             "support": {
-                "issues": "https://github.com/jmcnualan/lumen-exception/issues",
-                "source": "https://github.com/jmcnualan/lumen-exception/tree/v30.1"
+                "issues": "https://github.com/damnyan/laravel-exception/issues",
+                "source": "https://github.com/damnyan/laravel-exception/tree/v1.0.5"
             },
-            "time": "2022-09-01T07:40:33+00:00"
+            "time": "2023-05-12T07:36:16+00:00"
         }
     ],
     "packages-dev": [
